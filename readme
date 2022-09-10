@@ -1,1 +1,25 @@
+Teams_Create_CSV.ps1
+    Door het uitvoeren van dit script worden er "edu teams" (klassen) aangemaakt op basis van een .csv bestand (teams.csv)
+    In het .csv bestand mag je een teamnaam, owners (leerkrachten), members (leerlingen) en kanalen (vakken) kiezen.
+       Alle leerkrachten en leerlingen worden toegevoegd aan het team.
+       Er wordt voor elk vak een kanaal aangemaakt.
+       De volgende instellingen worden geconfigureerd:
+            -AllowAddRemoveApps $false 
+            -AllowCreateUpdateChannels $false 
+            -AllowCreateUpdateRemoveTabs $false 
+            -AllowDeleteChannels $false 
+            -AllowUserDeleteMessages $false 
+            -AllowUserEditMessages $false
+  
+    Voor de leerlingen wordt er ook een private channel aangemaakt waar de leerkrachten worden aan toegevoegd.
+    Dit is een schooleigen keuze, zodat elke leerling een eigen ruimte heeft die enkel wordt gedeeld met de leerkrachten.
+    Na doorlopen van het script moet je nog wel de lln toevoegen aan de private channels, want de teams zijn nog niet "actief"
 
+
+teams.csv
+  4 headers: naam,titu,lln,vakken
+    naam = de naam van het team dat je wilt aamaken
+    titu = e-mailadressen van de leerkrachten die je wilt toevoegen, gescheiden door een " ; "
+    lln = e-mailadressen van de leerlingen die je wilt toevoegen, gescheiden door een " ; "
+    vakken = kanalen die je wilt toevoegen aan het team (vakken)
+    
