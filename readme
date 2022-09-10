@@ -1,7 +1,10 @@
 Teams_Create_CSV.ps1
     Door het uitvoeren van dit script worden er "edu teams" (klassen) aangemaakt op basis van een .csv bestand (teams.csv)
     In het .csv bestand mag je een teamnaam, owners (leerkrachten), members (leerlingen) en kanalen (vakken) kiezen.
-       Alle leerkrachten en leerlingen worden toegevoegd aan het team.
+    Eerst moet je inloggen met je admin account - nadien kan je het .csv bestand inladen en nog eens visueel controleren alvorens het uit te voeren.
+    
+       Elk team wordt aangemaakt.
+       De leerkrachten en leerlingen worden toegevoegd aan de teams.
        Er wordt voor elk vak een kanaal aangemaakt.
        De volgende instellingen worden geconfigureerd:
             -AllowAddRemoveApps $false 
