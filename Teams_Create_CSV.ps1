@@ -3,13 +3,6 @@
 Werkende met:
 2.0.2.118            AzureAD
 2.5.2-preview        MicrosoftTeams        
-           
-Door het uitvoeren van dit script worden er "edu teams" (klassen) aangemaakt op basis van een .csv bestand.
-In het bestand mag je een teamnaam, owners (leerkrachten), members (leerlingen) en kanalen (vakken) kiezen. 
-Voor de leerlingen wordt er ook een private channel aangemaakt waar de leerkrachten worden aan toegevoegd
-Wil je meerdere owners, members of kanalen toevoegen, dan scheid je deze door een ";"
-Na doorlopen van het script moet je nog wel de lln toevoegen aan de private channels, want de teams zijn nog niet "actief"
-
 #>
 
 
