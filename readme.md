@@ -6,12 +6,10 @@ Working with:
 
 
 ## Teams_Create_GUI.ps1
-    You can use this to create "edu teams" based on the information from a .csv-file (teams.csv) in the same directory.
-    In the csv-file you can provide a team name, owners (teachers), members (students) and channels (subjects).
-    You need to have an MS365 admin account. Also, make sure you have installed the Teams and AzureAD modules for PowerShell.
+You can use this to create "edu teams" based on the information from a .csv-file (teams.csv) in the same directory. In the csv-file you can provide a team name, owners (teachers), members (students) and channels (subjects). You need to have an MS365 admin account. Also, make sure you have installed the Teams and AzureAD modules for PowerShell.
     
    ###      The following actions are always executed:
-                - Create teams with a custom name
+                -Create teams with a custom name
 
                 - Add students and teachers
 
