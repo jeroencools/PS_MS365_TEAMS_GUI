@@ -18,6 +18,7 @@ Teams_Create_GUI.ps1
             -AllowUserEditMessages $false
    
    The following actions are optional - you can choose these in the GUI
+        
         - create a public channel for each subject
         
         - create a private channel for each student and add all the teachers to these channels
