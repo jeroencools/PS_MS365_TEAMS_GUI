@@ -27,8 +27,9 @@ Teams_Create_GUI.ps1
             !!! Because the teams are not "active" when they are created, 
             the teachers will need to add the students to these channels afterwards.
             
-        - choose a prefix for these private channels (default = "First name Last name", but to make sure they are always on top
-            in the list of channels you can add "0." - for example "0. First name Last name")
+        - choose a prefix for these private channels (default = "First name Last name", 
+        but to make sure they are always on top in the list of channels you can add "0." 
+        - for example "0. First name Last name")
         (The creation of these private channels is something that our schools have chosen so you
         always have an online space for each student that is shared with the teachers. By doing so
         the teachers can check homework, add comments to files, organise the folders of the students ...)
