@@ -36,8 +36,8 @@ Teams_Create_GUI.ps1
  
 teams.csv
   4 headers: name,teachers,students,subjects
-    name = the name of the team you want to create
-    teachers = email addresses of the teachers you want to add - separated by ";"
-    students = email addresses of the students you want to add - separated by ";"
-    vakken = subjects you want to add as channels - separated by ";"
+    - name = the name of the team you want to create
+    - teachers = email addresses of the teachers you want to add - separated by ";"
+    - students = email addresses of the students you want to add - separated by ";"
+    - vakken = subjects you want to add as channels - separated by ";"
     
