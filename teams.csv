@@ -1,2 +1,2 @@
-naam,titu,lln,vakken
-TEAMNAAM,e-mailadreslkr1;e-mailadreslkr2;e-mailadreslkr3,e-mailadreslln1;e-mailadreslln2;e-mailadreslln3,vak1;vak2;vak3;vak4
+name,teachers,students,subjects
+teamname,emailaddress1;emailaddress2;emailaddress3,emailaddress1;emailaddress2;emailaddress3,subject1;subject2
