@@ -1,3 +1,5 @@
+![GUI](https://user-images.githubusercontent.com/113233490/208303169-9021062a-f390-472f-b1eb-2c4689757757.png)
+
 
 Teams_Create_GUI.ps1
     You can use this to create "edu teams" based on the information from a .csv-file (teams.csv) in the same directory.
@@ -22,7 +24,8 @@ Teams_Create_GUI.ps1
         - create a public channel for each subject
         
         - create a private channel for each student and add all the teachers to these channels
-            !!! Because the teams are not "active" when they are created, the teachers will need to add the students to these channels afterwards.
+            !!! Because the teams are not "active" when they are created, 
+            the teachers will need to add the students to these channels afterwards.
             
         - choose a prefix for these private channels (default = "First name Last name", but to make sure they are always on top
             in the list of channels you can add "0." - for example "0. First name Last name")
