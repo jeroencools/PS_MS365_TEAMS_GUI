@@ -38,7 +38,7 @@ Working with:
                 always have an online space for each student that is shared with the teachers. By doing so
                 the teachers can check homework, add comments to files, organise the folders of the students ...)
 
-  
+   
 ## teams.csv
   4 headers: name,teachers,students,subjects
   - name = the name of the team you want to create
