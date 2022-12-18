@@ -1,6 +1,7 @@
 Working with: 
-2.0.2.140            AzureAD                             PSGallery            
-4.9.1                MicrosoftTeams                      PSGallery            
+
+* 2.0.2.140            AzureAD                             PSGallery            
+* 4.9.1                MicrosoftTeams                      PSGallery            
 
 ![GUI](https://user-images.githubusercontent.com/113233490/208303660-ab4e8536-d2ed-4551-b997-c44eea87714e.PNG)
 
