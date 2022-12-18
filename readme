@@ -1,28 +1,41 @@
-Teams_Create_CSV.ps1
-    Door het uitvoeren van dit script worden er "edu teams" (klassen) aangemaakt op basis van een .csv bestand (teams.csv)
-    In het .csv bestand mag je een teamnaam, owners (leerkrachten), members (leerlingen) en kanalen (vakken) kiezen.
-    Eerst moet je inloggen met je admin account - nadien kan je het .csv bestand inladen en nog eens visueel controleren alvorens het uit te voeren.
+Teams_Create_GUI.ps1
+    You can use this to create "edu teams" based on the information from a .csv-file (teams.csv) in the same directory.
+    In the csv-file you can provide a team name, owners (teachers), members (students) and channels (subjects).
+    You need to have an MS365 admin account. Also, make sure you have installed the Teams and AzureAD modules for PowerShell.
     
-       Elk team wordt aangemaakt.
-       De leerkrachten en leerlingen worden toegevoegd aan de teams.
-       Er wordt voor elk vak een kanaal aangemaakt.
-       De volgende instellingen worden geconfigureerd:
+    The following actions are always executed:
+        - Create teams with a custom name
+        
+        - Add students and teachers
+        
+        - Configure the following settings:
             -AllowAddRemoveApps $false 
             -AllowCreateUpdateChannels $false 
             -AllowCreateUpdateRemoveTabs $false 
             -AllowDeleteChannels $false 
             -AllowUserDeleteMessages $false 
             -AllowUserEditMessages $false
-  
-    Voor de leerlingen wordt er ook een private channel aangemaakt waar de leerkrachten worden aan toegevoegd.
-    Dit is een schooleigen keuze, zodat elke leerling een eigen ruimte heeft die enkel wordt gedeeld met de leerkrachten.
-    Na doorlopen van het script moet je nog wel de lln toevoegen aan de private channels, want de teams zijn nog niet "actief"
+   
+   The following actions are optional - you can choose these in the GUI
+        - create a public channel for each subject
+        
+        - create a private channel for each student and add all the teachers to these channels
+            !!! Because the teams are not "active" when they are created, the teachers will need to add the students to these channels afterwards.
+            
+        - choose a prefix for these private channels (default = "First name Last name", but to make sure they are always on top
+            in the list of channels you can add "0." - for example "0. First name Last name")
+        (The creation of these private channels is something that our schools have chosen so you
+        always have an online space for each student that is shared with the teachers. By doing so
+        the teachers can check homework, add comments to files, organise the folders of the students ...)
+     
+
+![alt text](https://jeroenict.be/____impro/1/onewebmedia/GUI.PNG?etag=W%2F%223505f-639d8e99%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=595%2B364)
 
 
 teams.csv
-  4 headers: naam,titu,lln,vakken
-    naam = de naam van het team dat je wilt aamaken
-    titu = e-mailadressen van de leerkrachten die je wilt toevoegen, gescheiden door een " ; "
-    lln = e-mailadressen van de leerlingen die je wilt toevoegen, gescheiden door een " ; "
-    vakken = kanalen die je wilt toevoegen aan het team (vakken)
+  4 headers: name,teachers,students,subjects
+    name = the name of the team you want to create
+    teachers = email addresses of the teachers you want to add - separated by ";"
+    students = email addresses of the students you want to add - separated by ";"
+    vakken = subjects you want to add as channels - separated by ";"
     
