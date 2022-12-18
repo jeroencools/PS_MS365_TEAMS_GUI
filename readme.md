@@ -1,3 +1,7 @@
+Working with: 
+2.0.2.140            AzureAD                             PSGallery            
+4.9.1                MicrosoftTeams                      PSGallery            
+
 ![GUI](https://user-images.githubusercontent.com/113233490/208303169-9021062a-f390-472f-b1eb-2c4689757757.png)
 
 
