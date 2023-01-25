@@ -1,4 +1,27 @@
-﻿$credentials = Get-Credential
+########################### CONNECTION ############################################################################################################
+
+if(-not (Get-Module AzureAD  -ListAvailable))
+{
+Write-Host "Installing module AzureAD."
+Install-Module AzureAD -Force
+}
+else
+{
+Write-Host "Required module AzureAD already installed."
+}
+
+
+if(-not (Get-Module MicrosoftTeams  -ListAvailable))
+{
+Write-Host "Installing module MicrosoftTeams."
+Install-Module MicrosoftTeams -Force
+}
+else
+{
+Write-Host "Required module MicrosoftTeams already installed."
+}
+
+$credentials = Get-Credential
 Connect-MicrosoftTeams -Credential $credentials  
 Connect-AzureAD -Credential $credentials 
 Start-Sleep -Seconds 4
