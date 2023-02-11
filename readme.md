@@ -20,25 +20,44 @@ You need to have an MS365 admin account. Also, make sure you have installed the 
 * Configure the following settings:
 
     funsettings =
+           
             "allowGiphy" = "false"; 
+            
             "giphyContentRating" = "strict"; 
+            
             "allowStickersAndMemes" = "false"; 
+            
             "allowCustomMemes" = "false"; 
+            
     memberSettings =
+      
         "allowCreateUpdateChannels" = "false"; 
+        
         "allowCreatePrivateChannels" = "false"; 
+        
         "allowDeleteChannels" = "false"; 
+        
         "allowAddRemoveApps" = "false"; 
+        
         "allowCreateUpdateRemoveTabs" = "false"; 
+        
         "allowCreateUpdateRemoveConnectors" = "false"; 
+        
     $guestSettings = 
-            "allowCreateUpdateChannels" = "false"; 
-            "allowDeleteChannels" = "false"; 
+           
+           "allowCreateUpdateChannels" = "false"; 
+           
+           "allowDeleteChannels" = "false"; 
     messagingSettings
+            
             "allowUserEditMessages" = "false"; 
+            
             "allowUserDeleteMessages" = "false" ;
+            
             "allowOwnerDeleteMessages" = "false"; 
+            
             "allowTeamMentions" = "false"; 
+            
             "allowChannelMentions" = "false"; 
   
 ### The following actions are optional - you can choose these in the GUI
