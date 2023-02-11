@@ -1,5 +1,6 @@
 Todo:
 * add the function to automatically change the teams picture
+* rename the transcript to "output-timeanddateofexecution.txt"
 
 Working with: 
 
