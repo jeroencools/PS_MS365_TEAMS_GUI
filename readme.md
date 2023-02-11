@@ -9,8 +9,6 @@ Working with:
 You can use this to create "edu teams" based on the information from a .csv-file (teams.csv) in the same directory.
 
 In the csv-file you can provide a team name, owners (teachers), members (students) and channels (subjects). 
-
-You need to have an MS365 admin account. Also, make sure you have installed the Teams and AzureAD modules for PowerShell.
     
 ### The following actions are always executed:
 * Create teams with a custom name
@@ -64,8 +62,7 @@ You need to have an MS365 admin account. Also, make sure you have installed the 
 
 * create a public channel for each subject
 
-* create a private channel for each student and add all the teachers to these channels
-!!! Because the teams are not "active" when they are created, the teachers will need to add the students to these channels afterwards.
+* create a private channel for each student, add the student to his/her channel and add all the teachers to these channels
 
 * choose a prefix for these private channels (default = "First name Last name", but to make sure they are always on top in the list of channels you can add "0." 
 for example "0. First name Last name")
