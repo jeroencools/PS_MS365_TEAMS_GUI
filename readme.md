@@ -1,3 +1,6 @@
+Todo:
+* add the function to automatically change the teams picture
+
 Working with: 
 
 * 1.19.0               Microsoft.Graph        
@@ -9,6 +12,8 @@ Working with:
 You can use this to create "edu teams" based on the information from a .csv-file (teams.csv) in the same directory.
 
 In the csv-file you can provide a team name, owners (teachers), members (students) and channels (subjects). 
+
+By executing this file a transcript "output.txt" will be created in the same folder. After the script is done, you can use this to check for errors.
     
 ### The following actions are always executed:
 * Create teams with a custom name
