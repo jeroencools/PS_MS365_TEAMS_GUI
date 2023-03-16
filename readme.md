@@ -1,12 +1,15 @@
-Todo:
-* add the function to automatically change the teams picture
-* rename the transcript to "output-timeanddateofexecution.txt"
+## to do:
+* simplify the process for adding teams pictures
+* add "checks" for folders with no images
 
-Working with: 
+## Working with: 
 
 * 1.19.0               Microsoft.Graph        
 
-![GUI](https://user-images.githubusercontent.com/113233490/208303660-ab4e8536-d2ed-4551-b997-c44eea87714e.PNG)
+![1](https://user-images.githubusercontent.com/113233490/225577157-a825a3e2-4219-4265-9239-a536301dfd9b.png)
+![2](https://user-images.githubusercontent.com/113233490/225577188-6ba7c444-3751-42c8-a7e8-019dcc766fe1.png)
+![3](https://user-images.githubusercontent.com/113233490/225577200-3007fe93-0b67-47aa-9150-9d4b9c8af470.png)
+
 
 
 ## Teams_Create_GUI.ps1
@@ -14,57 +17,59 @@ You can use this to create "edu teams" based on the information from a .csv-file
 
 In the csv-file you can provide a team name, owners (teachers), members (students) and channels (subjects). 
 
-By executing this file a transcript "output.txt" will be created in the same folder. After the script is done, you can use this to check for errors.
+By executing this file a transcript "output_*timeanddate*.txt" will be created in the same folder. After the script is done, you can use this to check for errors.
     
 ### The following actions are always executed:
 * Create teams with a custom name
 
 * Add students and teachers
 
+### The following actions are optional - you can choose these in the GUI
+
 * Configure the following settings:
 
     funsettings =
            
-            "allowGiphy" = "false"; 
+            "allowGiphy"; 
             
-            "giphyContentRating" = "strict"; 
+            "giphyContentRating"; 
             
-            "allowStickersAndMemes" = "false"; 
+            "allowStickersAndMemes"; 
             
-            "allowCustomMemes" = "false"; 
+            "allowCustomMemes"; 
             
     memberSettings =
       
-        "allowCreateUpdateChannels" = "false"; 
+        "allowCreateUpdateChannels"; 
         
-        "allowCreatePrivateChannels" = "false"; 
+        "allowCreatePrivateChannels"; 
         
-        "allowDeleteChannels" = "false"; 
+        "allowDeleteChannels"; 
         
-        "allowAddRemoveApps" = "false"; 
+        "allowAddRemoveApps"; 
         
-        "allowCreateUpdateRemoveTabs" = "false"; 
+        "allowCreateUpdateRemoveTabs"; 
         
-        "allowCreateUpdateRemoveConnectors" = "false"; 
+        "allowCreateUpdateRemoveConnectors"; 
         
     $guestSettings = 
            
-           "allowCreateUpdateChannels" = "false"; 
+           "allowCreateUpdateChannels"; 
            
-           "allowDeleteChannels" = "false"; 
+           "allowDeleteChannels"; 
     messagingSettings
             
-            "allowUserEditMessages" = "false"; 
+            "allowUserEditMessages"; 
             
-            "allowUserDeleteMessages" = "false" ;
+            "allowUserDeleteMessages";
             
-            "allowOwnerDeleteMessages" = "false"; 
+            "allowOwnerDeleteMessages"; 
             
-            "allowTeamMentions" = "false"; 
+            "allowTeamMentions"; 
             
-            "allowChannelMentions" = "false"; 
+            "allowChannelMentions"; 
   
-### The following actions are optional - you can choose these in the GUI
+
 
 * create a public channel for each subject
 
@@ -75,6 +80,24 @@ for example "0. First name Last name")
                 
 *(The creation of these private channels is something that our schools have chosen so you always have an online space for each student that is shared with the teachers. By doing so the teachers can check homework, add comments to files, organise the folders of the students ...)*
 
+* Choose a "welcoming text" for each team. If left empty, no text will be posted. If you add text, each team will have a new post in the "general" channel, posted by the user who executes the script. In the textboxt you can use the variable $name to insert dynamic content in the text (in this example, the name of the team).
+
+* Change the picture of each team. If you enable this feature, you will have to click the button "Create folders in script directory". This will create a folder "images" in the directory of the script containing separate folders for each team. In each folder you can provide an image and the script will set this as the teams picture. These can be different images for each team. The images must have the name "photo.png". See the following example:
+
+    * Teams_Create_GUI.ps1
+    * images
+        * team 1
+            
+            photo.png
+        * team 2
+            
+            photo.png
+        * team 3
+           
+           photo.png
+        * team 4
+            
+            photo.png
    
 ## teams.csv
   4 headers: name,teachers,students,subjects
