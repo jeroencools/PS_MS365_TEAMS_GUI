@@ -1,5 +1,5 @@
 ## to do:
-* simplify the process for adding teams pictures
+* simplify the process for adding teams pictures: selecting images, different names ...
 * add "checks" for folders with no images
 
 ## Working with: 
