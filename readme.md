@@ -1,7 +1,7 @@
 ## to do:
-* simplify the process for adding teams pictures: selecting images, different names ...
-* add "checks" for folders with no images
-* add a function to link it to/ sync it with administrative software
+* Simplify the process for adding teams pictures: selecting images, different names ...
+* Check for folders with no images
+* Add a function to sync it with other (administrative) software
 
 ## Working with: 
 
