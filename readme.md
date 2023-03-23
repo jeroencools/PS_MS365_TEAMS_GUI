@@ -105,5 +105,5 @@ for example "0. First name Last name")
   - name = the name of the team you want to create
   - teachers = email addresses of the teachers you want to add - separated by ";"
   - students = email addresses of the students you want to add - separated by ";"
-  - vakken = subjects you want to add as channels - separated by ";"
+  - subjects = subjects you want to add as channels - separated by ";"
     
