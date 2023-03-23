@@ -81,9 +81,9 @@ for example "0. First name Last name")
                 
 *(The creation of these private channels is something that our schools have chosen so you always have an online space for each student that is shared with the teachers. By doing so the teachers can check homework, add comments to files, organise the folders of the students ...)*
 
-* Choose a "welcoming text" for each team. If left empty, no text will be posted. If you add text, each team will have a new post in the "general" channel, posted by the user who executes the script. In the textboxt you can use the variable $name to insert dynamic content in the text (in this example, the name of the team).
+* Choose a "welcoming text" for each team. If left empty, no text will be posted. If you add text, each team will have a new post in the "general" channel, posted by the user who executes the script. In the textboxt you can use the variable $name to insert dynamic content in the text (in this example, the name of the team). For example: "Welcome to $name"
 
-* Change the picture of each team. If you enable this feature, you will have to click the button "Create folders in script directory". This will create a folder "images" in the directory of the script containing separate folders for each team. In each folder you can provide an image and the script will set this as the teams picture. These can be different images for each team. The images must have the name "photo.png". See the following example:
+* Change the picture of each team. If you enable this feature, you will have to click the button "Create folders in script directory". This will create a folder "images" in the directory of the script containing separate folders for each team. In each folder you can provide an image and the script will set this as the teams picture of the team with the same name. These can be different images for each team. The images must have the name "photo.png". See the following example:
 
     * Teams_Create_GUI.ps1
     * images
