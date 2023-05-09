@@ -215,9 +215,19 @@ function add_private_channels {
 function foldercreate
 {
     $csv = Import-Csv "$PSScriptRoot\teams.csv" 
-    foreach ($i in $csv) {
+    foreach ($i in $csv) 
+    {
     $foldername = $i.name
-    mkdir "$PSScriptRoot\images\$foldername"
+
+    if (Test-Path -Path "$PSScriptRoot\images\$foldername")
+        {
+        Write-Host "The folders already exist."
+        }
+    else
+        {
+   
+        mkdir "$PSScriptRoot\images\$foldername"
+        }
     }
     
 }
