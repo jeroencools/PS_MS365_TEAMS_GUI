@@ -149,7 +149,7 @@ function add_subjects {
             -AdditionalProperties  @{
             "@odata.type"       = "#Microsoft.Graph.channel"
             MembershipType      = "standard"
-            IsFavoriteByDefault = $true
+            IsFavoriteByDefault = $false
             DisplayName         = $subjectsplit[$j]
         }  
     }
